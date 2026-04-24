@@ -1,6 +1,5 @@
 streamlit
-langchain
+langchain==0.3.8
 langchain_community
-langchain-core
 requests
-pydantic
+pydantic>=2.7.4,<3.0.0
