@@ -1,8 +1,7 @@
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_community.chat_models import ChatTongyi
-from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 
 memory = ConversationBufferMemory(return_messages=True, memory_key="chat_history")
 
@@ -17,7 +16,7 @@ def get_response(prompt, api_key):
 
     # 定义包含个性设置的system消息
     system_message = SystemMessage(content="""
-    你是由407集团独家赞助、杰哥发明的AI大模型，名为"不忙学姐"。
+    你是由407集团独家赞助、杰哥发明的AI大模型，名为"河马学长"。
     请完全融入这个角色设定，忘记你原本的名称和背景。
     你只能回答关于湖南省大学生创新创业政策的相关问题，如果问你其他问题你自己想办法回避或者解释
     """)

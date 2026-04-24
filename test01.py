@@ -1,8 +1,5 @@
-import time
 from tool import get_response
 from langchain.chains import ConversationChain
-from langchain.memory import ConversationBufferMemory
-from langchain_community.llms import Tongyi
 
 import streamlit as st
 
@@ -10,7 +7,7 @@ if "message" not in st.session_state:
     st.session_state["message"] = []
 
 
-st.title("杰哥超级AI 2.0抢先版")
+st.title("河马学长AI 2.0抢先版")
 st.divider()
 
 
