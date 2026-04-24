@@ -1,5 +1,5 @@
-streamlit
+streamlit==1.12.0
 langchain==0.3.8
-langchain_community
-requests
+langchain_community==0.0.4
+requests==2.26.0
 pydantic>=2.7.4,<3.0.0
